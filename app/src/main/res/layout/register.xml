@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2" >
+    
+    <EditText 
+        android:id="@+id/nickname"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:maxLength="12"
+        android:hint="昵称"
+        android:background="@drawable/input"/>
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/nickname"
+        android:layout_marginTop="20dp"
+        android:text="性别"
+        android:textSize="17sp" 
+        android:textColor="#404040"/>
+	<RadioGroup
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   	android:layout_toRightOf="@+id/gender"
+	   	android:layout_below="@id/nickname"
+	   	android:layout_marginTop="15dp"
+	   	android:orientation="horizontal">
+	    
+	    <RadioButton
+	        android:id="@+id/male"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:checked="true"
+	        android:text="帅哥" 
+	        android:textColor="#1C86EE"/>
+	
+	    <RadioButton
+	        android:id="@+id/female"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="美女" 
+	        android:textColor="#EE0000"/>
+    </RadioGroup>
+    
+    
+    <EditText 
+        android:id="@+id/email_account"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="邮箱即登录账号"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"/>
+    
+    <EditText 
+        android:id="@+id/password"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="密码大于6位"
+        android:maxLength="18"
+        android:layout_below="@id/email_account"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"/>
+    
+
+    <Button
+        android:id="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+   		android:layout_marginBottom="10dp"
+        android:text="注册"
+        android:textColor="#FFFFFF" 
+        android:background="@drawable/selector_btn"/>
+    
+</RelativeLayout>

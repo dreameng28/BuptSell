@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal" 
+    android:background="#0099FF">
+    
+    <Button 
+        android:id="@+id/cancel_uoload"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/back_to_main"/>
+    
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="发布商品"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"/>
+    
+    <Button
+        android:id="@+id/confirm_upload"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/upload_check"/>
+    
+
+</LinearLayout>

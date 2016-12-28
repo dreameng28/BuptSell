@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageButton 
+        android:id="@+id/select_camera"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+		android:adjustViewBounds="true"
+        android:src="@drawable/camera_img"/>
+    <ImageButton 
+        android:id="@+id/select_galery"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+		android:adjustViewBounds="true"
+        android:src="@drawable/galery_img"/>
+    
+
+</LinearLayout>

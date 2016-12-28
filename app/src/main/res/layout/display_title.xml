@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#666FFF">
+    <Button 
+        android:id="@+id/back_to_main"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/back_to_main"/>
+    <TextView 
+        android:id="@+id/display_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="萌物展示"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"/>
+     
+     <Button 
+        android:id="@+id/add_description"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/add_desc"/>
+    
+
+</RelativeLayout>
